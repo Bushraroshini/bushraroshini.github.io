@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bushra M | Aspiring Java Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--surface:#fff;--ink:#17202c;--muted:#5a6675;--line:#dfe3e9;--accent:#1f4fc4;--accent-ink:#fff;--tag:#e8eefb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10151c;--surface:#171e28;--ink:#e8ecf2;--muted:#9aa5b4;--line:#283140;--accent:#7fa2f5;--accent-ink:#0d1420;--tag:#1f2a3d}}
+:root[data-theme="dark"]{--bg:#10151c;--surface:#171e28;--ink:#e8ecf2;--muted:#9aa5b4;--line:#283140;--accent:#7fa2f5;--accent-ink:#0d1420;--tag:#1f2a3d}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;gap:18px;height:60px}
+nav .brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;text-decoration:none;margin-right:auto}
+nav .links{display:flex;gap:16px;overflow-x:auto;scrollbar-width:none}
+nav .links a{text-decoration:none;color:var(--muted);font-size:.93rem;white-space:nowrap;padding:4px 0}
+nav .links a:hover{color:var(--ink)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer;font:inherit;font-size:.85rem}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,3.5vw,2.1rem);margin-bottom:28px}
+.hero{padding:88px 0 72px}
+.hero h1{font-size:clamp(2.4rem,7vw,4.2rem);font-weight:700;letter-spacing:-.02em}
+.hero .role{font-size:clamp(1.1rem,2.5vw,1.4rem);color:var(--accent);margin:12px 0 20px;font-weight:500}
+.hero p{max-width:60ch;color:var(--muted);margin:0 0 28px}
+.hero .loc{font-size:.92rem;color:var(--muted);margin-bottom:28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;text-decoration:none;padding:10px 18px;border-radius:8px;border:1px solid var(--line);font-weight:500;font-size:.95rem;background:var(--surface);transition:border-color .2s,background .2s}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.hero h1,.hero .role,.hero .loc,.hero p,.hero .btns{animation:in .6s ease both}
+.hero .role{animation-delay:.08s}.hero .loc{animation-delay:.14s}.hero p{animation-delay:.2s}.hero .btns{animation-delay:.28s}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:40px}
+.about p{margin:0;max-width:62ch}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.facts h3{font-size:1.05rem;margin-bottom:8px}
+.facts p{color:var(--muted);font-size:.95rem;margin:0 0 4px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.group{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.group h3{font-size:1.05rem;margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{background:var(--tag);border-radius:6px;padding:3px 10px;font-size:.88rem}
+.job{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px;margin-bottom:16px}
+.job header{all:unset;display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;margin-bottom:10px}
+.job h3{font-size:1.15rem}
+.job .date{color:var(--muted);font-size:.92rem}
+.job .co{color:var(--accent);font-weight:500;margin-bottom:8px}
+ul.plain{margin:0;padding-left:20px}
+ul.plain li{margin-bottom:6px}
+#projects{background:var(--surface)}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.card{background:var(--bg);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:10px;padding:26px;display:flex;flex-direction:column;gap:14px}
+.card h3{font-size:1.4rem}
+.card .desc{margin:0;color:var(--muted)}
+.card .lbl{font-weight:500;font-size:.9rem;margin-bottom:6px}
+.card .foot{margin-top:auto;padding-top:6px}
+.certs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.certs li{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px}
+.certs span{display:block;color:var(--muted);font-size:.88rem}
+.contact-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-bottom:24px}
+.contact-list div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px;overflow-wrap:anywhere}
+.contact-list span{display:block;color:var(--muted);font-size:.85rem}
+footer{padding:28px 0;color:var(--muted);font-size:.9rem}
+:root{--a2:#0e8a7d;--shadow:0 1px 2px rgba(23,32,44,.05),0 8px 24px rgba(23,32,44,.06);--hero:#eaf0fc}
+:root[data-theme="dark"]{--a2:#5fd0c0;--shadow:0 8px 24px rgba(0,0,0,.35);--hero:#131c2b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--a2:#5fd0c0;--shadow:0 8px 24px rgba(0,0,0,.35);--hero:#131c2b}}
+header{backdrop-filter:blur(8px);background:color-mix(in srgb,var(--bg) 88%,transparent)}
+.hero{background:var(--hero);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
+.mono{width:64px;height:64px;border-radius:16px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font:700 1.5rem "Bricolage Grotesque",sans-serif;margin-bottom:22px;box-shadow:var(--shadow)}
+.focus{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:var(--shadow);animation:in .6s .3s ease both}
+.focus h3{font-size:1.05rem;margin-bottom:6px}
+.focus p{margin:0 0 16px;font-size:.9rem;color:var(--muted)}
+.focus .tags li{background:var(--tag);font-weight:500;padding:5px 12px}
+
+h2{display:flex;align-items:center;gap:14px}
+h2::before{content:"";width:6px;height:1.1em;border-radius:3px;background:linear-gradient(var(--accent),var(--a2))}
+section:nth-of-type(even):not(.hero):not(#projects){background:color-mix(in srgb,var(--surface) 55%,var(--bg))}
+.group,.job,.facts,.certs li,.contact-list div{box-shadow:var(--shadow);border-radius:14px}
+.group{border-top:3px solid var(--a2)}
+.group h3{color:var(--ink)}
+.tags li{border:1px solid color-mix(in srgb,var(--accent) 18%,transparent)}
+#experience .wrap{position:relative}
+.job{position:relative;margin-left:28px}
+.job::before{content:"";position:absolute;left:-28px;top:28px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--tag)}
+.job::after{content:"";position:absolute;left:-23px;top:44px;bottom:-30px;width:2px;background:var(--line)}
+.job:last-child::after{display:none}
+.job .date{background:var(--tag);border-radius:999px;padding:2px 12px;font-size:.85rem}
+#projects{background:var(--hero)}
+.card{background:var(--surface);border-radius:16px;border-top:4px solid var(--accent);box-shadow:var(--shadow);padding:30px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px)}
+.card:nth-child(2){border-top-color:var(--a2)}
+.card h3{font-size:1.5rem}
+.card .plain li::marker{color:var(--accent)}
+.certs li{border-left:4px solid var(--a2);font-weight:500}
+.btn{box-shadow:var(--shadow)}
+.btn.primary:hover{filter:brightness(1.08)}
+@media (max-width:720px){.hero-grid{grid-template-columns:1fr;gap:32px}.hero{padding-top:56px}}
+@media (max-width:720px){.about{grid-template-columns:1fr}section{padding:56px 0}.projects{grid-template-columns:1fr}.brand{display:none}nav{gap:10px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+<a class="brand" href="#home">Bushra M</a>
+<div class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a></div>
+<button id="theme" aria-label="Toggle dark or light mode">Theme</button>
+</nav></div></header>
+
+<main>
+<section id="home" class="hero"><div class="wrap hero-grid"><div>
+<div class="mono" aria-hidden="true">BM</div>
+<h1>Bushra M</h1>
+<div class="role">Aspiring Java Full Stack Developer</div>
+<div class="loc">Bangalore, Karnataka</div>
+<p>Foundation in Java, Object-Oriented Programming, SQL, HTML, CSS, and JavaScript, with hands-on work on Java applications, REST-based solutions, and web applications.</p>
+<div class="btns">
+<a class="btn primary" href="#projects">View projects</a>
+<a class="btn" href="https://github.com/Bushraroshini" target="_blank" rel="noopener">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/bushra-m-a911a0333/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="Bushra_M_Resume.pdf" download id="resume">Download resume</a>
+</div>
+</div>
+<aside class="focus"><h3>Core focus</h3><p>What I work with most</p>
+<ul class="tags"><li>Java</li><li>OOP</li><li>SQL</li><li>JDBC</li><li>REST APIs</li><li>MySQL</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></aside>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<div class="about">
+<p>Aspiring Java Full Stack Developer with a strong foundation in Java, Object-Oriented Programming, SQL, HTML, CSS, and JavaScript. Hands-on experience developing Java applications, REST-based solutions, and web applications through internships and academic projects. Passionate about designing scalable software solutions, learning modern Java technologies, and contributing to high-quality software development teams.</p>
+<div class="facts"><h3>Education</h3>
+<p><strong>Bachelor of Engineering in Information Science and Engineering</strong></p>
+<p>HKBK College of Engineering (HKBKCE)</p>
+<p>2022–2026</p></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="skills">
+<div class="group"><h3>Programming Languages</h3><ul class="tags"><li>Java</li><li>SQL</li><li>Python</li></ul></div>
+<div class="group"><h3>Frontend</h3><ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React.js</li></ul></div>
+<div class="group"><h3>Backend</h3><ul class="tags"><li>Core Java</li><li>JDBC</li><li>REST APIs</li></ul></div>
+<div class="group"><h3>Database</h3><ul class="tags"><li>MySQL</li><li>MongoDB</li></ul></div>
+<div class="group"><h3>Core Concepts</h3><ul class="tags"><li>OOP</li><li>Exception Handling</li><li>Collections</li><li>Data Structures</li></ul></div>
+<div class="group"><h3>Tools &amp; Platforms</h3><ul class="tags"><li>Git</li><li>GitHub</li><li>VS Code</li><li>Eclipse</li><li>MySQL Workbench</li><li>Streamlit</li></ul></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<article class="job">
+<header><h3>Java Full Stack Intern</h3><span class="date">Present</span></header>
+<div class="co">KodNest</div>
+<ul class="plain">
+<li>Hands-on training in Java Full Stack Development, including Core Java, OOP, Collections, and Exception Handling.</li>
+<li>Practicing Java programming, problem-solving, SQL, and MySQL through coding assignments.</li>
+<li>Building frontend development skills in HTML, CSS, and JavaScript through assignments and technical practice.</li>
+</ul></article>
+<article class="job">
+<header><h3>Python Developer</h3><span class="date">September 2025 – December 2025</span></header>
+<div class="co">Infosys</div>
+<ul class="plain">
+<li>Developed backend automation modules using Object-Oriented Programming concepts.</li>
+<li>Worked with REST APIs and reusable backend components.</li>
+<li>Collaborated with development teams to build scalable software solutions.</li>
+</ul></article>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="projects">
+<article class="card">
+<h3>Employee Management System</h3>
+<p class="desc">Developed a console-based Employee Management System using Java and Object-Oriented Programming principles.</p>
+<div><div class="lbl">Technologies</div><ul class="tags"><li>Java</li><li>JDBC</li><li>MySQL</li></ul></div>
+<ul class="plain">
+<li>Implemented CRUD operations (Create, Read, Update, Delete) using JDBC with MySQL database connectivity.</li>
+<li>Applied encapsulation, constructors, modular programming, and exception handling for better maintainability.</li>
+<li>Validated user inputs and managed employee records efficiently through a menu-driven interface.</li>
+</ul>
+</article>
+<article class="card">
+<h3>Virtual Campus Guide</h3>
+<p class="desc">Developed a Service-Oriented Architecture (SOA)-based application for academic campus navigation.</p>
+<div><div class="lbl">Technologies</div><ul class="tags"><li>REST APIs</li><li>Service-Oriented Architecture</li></ul></div>
+<ul class="plain">
+<li>Designed RESTful backend services to provide department, facility, and event information.</li>
+<li>Built a modular architecture to support future web and mobile application integration.</li>
+</ul>
+</article>
+</div></div></section>
+
+<section id="certifications"><div class="wrap">
+<h2>Certifications</h2>
+<ul class="certs">
+<li>Programming in Java<span>NPTEL</span></li>
+<li>Data Science for Engineers<span>NPTEL</span></li>
+<li>Machine Learning Foundation<span>Infosys Springboard</span></li>
+<li>Data Science Foundation<span>Infosys Springboard</span></li>
+<li>Artificial Intelligence Foundation<span>Infosys Springboard</span></li>
+</ul></div></section>
+
+<section id="contact"><div class="wrap">
+<h2>Contact</h2>
+<div class="contact-list">
+<div><span>Email</span><a href="mailto:bushraroshini310@gmail.com">bushraroshini310@gmail.com</a></div>
+<div><span>Location</span>Bangalore, Karnataka</div>
+</div>
+<div class="btns">
+<a class="btn primary" href="mailto:bushraroshini310@gmail.com">Send an email</a>
+<a class="btn" href="https://www.linkedin.com/in/bushra-m-a911a0333/" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/Bushraroshini" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">Bushra M, Bangalore, Karnataka</div></footer>
+
+<script>
+(function(){
+var root=document.documentElement,key="portfolio-theme";
+try{var s=localStorage.getItem(key);if(s)root.setAttribute("data-theme",s)}catch(e){}
+document.getElementById("theme").addEventListener("click",function(){
+var dark=root.getAttribute("data-theme")==="dark"||(!root.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);
+var n=dark?"light":"dark";root.setAttribute("data-theme",n);
+try{localStorage.setItem(key,n)}catch(e){}
+});
+})();
+</script>
+</body>
+</html>
